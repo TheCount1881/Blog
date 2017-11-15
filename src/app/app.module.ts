@@ -15,6 +15,8 @@ import { PanelComponent } from './components/panel/panel.component';
 import { RouteGuard } from './components/auth/route-guard'
 import { NotificationService } from './providers/notification.service';
 import { NotificationComponent } from './components/notification/notification.component';
+import { OwnFireService } from './providers/own-fire.service';
+import { UserService } from './providers/user.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { NotificationComponent } from './components/notification/notification.co
   ],
   providers: [
     RouteGuard,
-    NotificationService
+    NotificationService,
+    OwnFireService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

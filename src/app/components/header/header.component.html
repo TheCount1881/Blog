@@ -4,7 +4,7 @@
       <a class="navbar-brand">Bs As Blog</a>
     </div>
     <ul class="nav navbar-nav">
-      <!--<li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Inicio</a></li>-->
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Inicio</a></li>
       <li routerLinkActive="active" *ngIf="isLoggedIn"><a routerLink="/posts">Posts</a></li>
       <li routerLinkActive="active" *ngIf="isLoggedIn"><a routerLink="/panel">Panel</a></li>
     </ul>
